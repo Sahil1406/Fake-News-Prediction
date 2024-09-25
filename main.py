@@ -59,7 +59,7 @@ X = dataset['content'].values
 
 Y = dataset['label'].values
 
-print(X.shape, Y.shape)
+# print(X.shape, Y.shape)
 
 
 # CONVERTING TEXTUAL DATA TO NUMERICAL DATA
@@ -94,3 +94,14 @@ X_test_prediction = model.predict(X_test)
 testing_data_accuracy = accuracy_score(X_test_prediction, Y_test)
 
 print('Accuracy on testing data is: ', testing_data_accuracy)
+
+
+X_new = X_test[0]
+
+prediction = model.predict(X_new)
+
+if (prediction[0] == 0):
+    print("The news is Real")
+else :
+    print("The news is Fake")
+
