@@ -26,7 +26,7 @@ dataset = dataset.fillna('')
 
 # MERGING THE AUTHOR TITLE AND TEXT TOGETHER
 
-dataset['content'] = dataset['author']+' '+ dataset['title']+' '+ dataset['text']
+dataset['content'] = dataset['author']+' '+ dataset['title']
 
 # print(dataset['content'])
 
@@ -51,4 +51,12 @@ def stemming(content):
 
 dataset['content'] = dataset['content'].apply(stemming)
 
-print('done')
+# print('done')
+
+# SEPARATING THE DATA AND THE LABEL
+
+X = dataset['content'].values
+
+Y = dataset['label'].values
+
+print(X.shape, Y.shape)
