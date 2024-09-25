@@ -60,3 +60,37 @@ X = dataset['content'].values
 Y = dataset['label'].values
 
 print(X.shape, Y.shape)
+
+
+# CONVERTING TEXTUAL DATA TO NUMERICAL DATA
+
+vectorizer = TfidfVectorizer()
+
+vectorizer.fit(X)
+
+X = vectorizer.transform(X)
+
+
+# SPITTING THE DATA INTO TRAINING AND TEST DATA
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, train_size=0.8, stratify = Y, random_state=1)
+
+
+# TRAINING THE MODEL
+
+model = LogisticRegression()
+
+model.fit(X_train, Y_train)
+
+# EVALUATION
+
+
+X_train_prediction = model.predict(X_train)
+training_data_accuracy = accuracy_score(X_train_prediction, Y_train)
+
+print('Accuracy on training data is: ', training_data_accuracy)
+
+X_test_prediction = model.predict(X_test)
+testing_data_accuracy = accuracy_score(X_test_prediction, Y_test)
+
+print('Accuracy on testing data is: ', testing_data_accuracy)
