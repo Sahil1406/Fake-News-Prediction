@@ -81,4 +81,4 @@ To run this project locally, follow these steps:
 
 ## Contact
 
-**For inquiries, please reach out to me at sahilsuryawanshi76@gmail.`com.**
+**For inquiries, please reach out to me at sahilsuryawanshi76@gmail.com.**
