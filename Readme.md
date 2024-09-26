@@ -20,13 +20,13 @@ Fake News Prediction is a machine learning project that aims to identify and cla
 - Visualizations of data distributions and model accuracy.
 
 ## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK / SpaCy
-- Matplotlib
-- Jupyter Notebook
+- `Python`
+- `Pandas`
+- `NumPy`
+- `Scikit-learn`
+- `NLTK / SpaCy`
+- `Matplotlib`
+- `Jupyter Notebook`
 
 ## Dataset
 The dataset used for this project consists of labeled news articles containing both fake and real news. The data can be found on [Kaggle](https://www.kaggle.com/c/fake-news/data) or any other dataset repository.
@@ -81,4 +81,4 @@ To run this project locally, follow these steps:
 
 ## Contact
 
-**For inquiries, please reach out to me at sahilsuryawanshi76@gmail.com.**
+**For inquiries, please reach out to me at sahilsuryawanshi76@gmail.`com.**
